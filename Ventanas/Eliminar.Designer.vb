@@ -47,7 +47,7 @@ Partial Class Eliminar
         Me.btnDelEmp.Name = "btnDelEmp"
         Me.btnDelEmp.Size = New System.Drawing.Size(318, 51)
         Me.btnDelEmp.TabIndex = 5
-        Me.btnDelEmp.Text = "Eliminar empleado empleado"
+        Me.btnDelEmp.Text = "Eliminar empleado "
         Me.btnDelEmp.UseVisualStyleBackColor = True
         '
         'Label1

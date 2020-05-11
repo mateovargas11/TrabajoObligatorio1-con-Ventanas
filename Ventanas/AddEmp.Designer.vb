@@ -43,14 +43,15 @@ Partial Class AddEmp
         Me.txtSalario = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.btnDelEmp = New System.Windows.Forms.Button()
+        Me.btnModif = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnAddEmp
         '
         Me.btnAddEmp.Font = New System.Drawing.Font("Cambria", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAddEmp.Location = New System.Drawing.Point(308, 292)
+        Me.btnAddEmp.Location = New System.Drawing.Point(330, 237)
         Me.btnAddEmp.Name = "btnAddEmp"
-        Me.btnAddEmp.Size = New System.Drawing.Size(262, 51)
+        Me.btnAddEmp.Size = New System.Drawing.Size(276, 51)
         Me.btnAddEmp.TabIndex = 0
         Me.btnAddEmp.Text = "Agregar empleado"
         Me.btnAddEmp.UseVisualStyleBackColor = True
@@ -58,7 +59,7 @@ Partial Class AddEmp
         'btnListados
         '
         Me.btnListados.Font = New System.Drawing.Font("Cambria", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnListados.Location = New System.Drawing.Point(681, 292)
+        Me.btnListados.Location = New System.Drawing.Point(687, 304)
         Me.btnListados.Name = "btnListados"
         Me.btnListados.Size = New System.Drawing.Size(155, 51)
         Me.btnListados.TabIndex = 1
@@ -215,18 +216,29 @@ Partial Class AddEmp
         'btnDelEmp
         '
         Me.btnDelEmp.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDelEmp.Location = New System.Drawing.Point(43, 292)
+        Me.btnDelEmp.Location = New System.Drawing.Point(43, 304)
         Me.btnDelEmp.Name = "btnDelEmp"
         Me.btnDelEmp.Size = New System.Drawing.Size(155, 51)
         Me.btnDelEmp.TabIndex = 20
         Me.btnDelEmp.Text = "Eliminar Empleado"
         Me.btnDelEmp.UseVisualStyleBackColor = True
         '
+        'btnModif
+        '
+        Me.btnModif.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnModif.Location = New System.Drawing.Point(379, 304)
+        Me.btnModif.Name = "btnModif"
+        Me.btnModif.Size = New System.Drawing.Size(155, 51)
+        Me.btnModif.TabIndex = 21
+        Me.btnModif.Text = "Modificar Empleado"
+        Me.btnModif.UseVisualStyleBackColor = True
+        '
         'AddEmp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(902, 367)
+        Me.Controls.Add(Me.btnModif)
         Me.Controls.Add(Me.btnDelEmp)
         Me.Controls.Add(Me.txtSalario)
         Me.Controls.Add(Me.Label9)
@@ -277,4 +289,5 @@ Partial Class AddEmp
     Friend WithEvents txtSalario As TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents btnDelEmp As Button
+    Friend WithEvents btnModif As Button
 End Class

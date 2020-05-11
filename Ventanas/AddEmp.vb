@@ -10,7 +10,6 @@ Public Class AddEmp
             txtSnom.Text, txtPape.Text, txtSape.Text, txtDir.Text, txtTel.Text, cbCargo.Text, pagar) = True Then
 
                 MsgBox("Empleado Agregado Satisfactoriamente !")
-
                 limpiarFormulario()
 
             End If
@@ -31,6 +30,7 @@ Public Class AddEmp
         txtDir.Clear()
         txtTel.Clear()
         txtSalario.Clear()
+        cbCargo.SelectedIndex = -1
     End Sub
 
     Private Sub btnListados_Click(sender As Object, e As EventArgs) Handles btnListados.Click
@@ -40,6 +40,11 @@ Public Class AddEmp
 
     Private Sub btnDelEmp_Click(sender As Object, e As EventArgs) Handles btnDelEmp.Click
         Eliminar.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub btnModif_Click(sender As Object, e As EventArgs) Handles btnModif.Click
+        Modificar.Show()
         Me.Hide()
     End Sub
 End Class

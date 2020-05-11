@@ -34,3 +34,4 @@ C:\Users\matva\source\repos\TrabajoObligatorio1-con-Ventanas\Ventanas\obj\Debug\
 C:\Users\matva\source\repos\TrabajoObligatorio1-con-Ventanas\Ventanas\obj\Debug\Ventanas.exe
 C:\Users\matva\source\repos\TrabajoObligatorio1-con-Ventanas\Ventanas\obj\Debug\Ventanas.xml
 C:\Users\matva\source\repos\TrabajoObligatorio1-con-Ventanas\Ventanas\obj\Debug\Ventanas.pdb
+C:\Users\matva\source\repos\TrabajoObligatorio1-con-Ventanas\Ventanas\obj\Debug\Ventanas.Modificar.resources
