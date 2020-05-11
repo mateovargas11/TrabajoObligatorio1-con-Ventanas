@@ -1,0 +1,1 @@
+Se deberá cambiar el dsn, el uid, y el psd(en caso de tenerla) para que funcione correctamente :)
