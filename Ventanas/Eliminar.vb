@@ -6,10 +6,12 @@ Public Class Eliminar
 
     Private Sub btnVerEmp_Click(sender As Object, e As EventArgs) Handles btnVerEmp.Click
         Dim consulta As String
-
-        consulta = "SELECT * FROM EMPLEADOS WHERE ced=" & txtCi.Text & ""
-        gvEmpleados.DataSource = emp.listado(consulta)
-
+        If txtCi.Text = "" Then
+            MsgBox("Ingrese una cedula valida!")
+        Else
+            consulta = "select * FROM EMPLEADOS WHERE ced=" & txtCi.Text & ""
+            gvEmpleados.DataSource = emp.listado(consulta)
+        End If
     End Sub
 
     Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
@@ -29,8 +31,12 @@ Public Class Eliminar
             MsgBox("Ingrese una cedula valida!")
         Else
             consulta = "DELETE FROM empleados WHERE ced= " & Val(txtCi.Text)
-            If emp.delEmp(consulta) = True Then
+            If emp.Pedido(consulta) = True Then
                 MsgBox("Empleado eliminado con exito!")
+
+                consulta = "select * FROM EMPLEADOS WHERE ced=" & txtCi.Text & ""
+                gvEmpleados.DataSource = emp.listado(consulta)
+
                 txtCi.Clear()
             End If
         End If

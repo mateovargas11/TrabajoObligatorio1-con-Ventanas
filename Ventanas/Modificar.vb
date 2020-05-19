@@ -18,11 +18,15 @@ Public Class Modificar
     End Sub
 
     Private Sub btnVerEmp_Click(sender As Object, e As EventArgs) Handles btnVerEmp.Click
-        MostrarTodo()
-        Dim consulta As String
-        txtCi.Enabled = False
-        consulta = "SELECT * FROM EMPLEADOS WHERE ced=" & txtCi.Text & ""
-        dgEmp.DataSource = emp.listado(consulta)
+        If txtCi.Text = "" Then
+            MsgBox("Ingrese una cedula valida!")
+        Else
+            MostrarTodo()
+            Dim consulta As String
+            txtCi.Enabled = False
+            consulta = "SELECT * FROM EMPLEADOS WHERE ced=" & txtCi.Text & ""
+            dgEmp.DataSource = emp.listado(consulta)
+        End If
     End Sub
 
     Private Sub OcultarTodo()
@@ -67,6 +71,7 @@ Public Class Modificar
         lblSape.Visible = True
         lblSnom.Visible = True
         lblTel.Visible = True
+        lblSelec.Visible = True
     End Sub
 
     Private Sub limpiarTodo()
@@ -82,10 +87,10 @@ Public Class Modificar
     End Sub
 
     Private Sub dgEmp_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgEmp.CellClick
-        Dim i As Integer
-        i = dgEmp.CurrentRow.Index
 
         Try
+            Dim i As Integer
+            i = dgEmp.CurrentRow.Index
             txtCi.Text = dgEmp.Item(0, i).Value()
             txtPnom.Text = dgEmp.Item(1, i).Value()
             txtSnom.Text = dgEmp.Item(2, i).Value()
@@ -96,7 +101,7 @@ Public Class Modificar
             txtTel.Text = dgEmp.Item(7, i).Value()
             txtSalario.Text = dgEmp.Item(8, i).Value()
         Catch ex As Exception
-
+            MsgBox("Error: " & ex.Message)
         End Try
 
     End Sub
@@ -112,7 +117,7 @@ Public Class Modificar
         consulta = consulta & "tel= '" & txtTel.Text.ToString & "',"
         consulta = consulta & "Cargo= '" & cbCargo.Text & "',"
         consulta = consulta & "sueldoPagar= " & txtSalario.Text.ToString & " where ced= " & txtCi.Text
-        If (emp.Modificar(consulta)) = True Then
+        If (emp.Pedido(consulta)) = True Then
             MsgBox("Empleado modificado con exito!")
             dgEmp.DataSource = emp.listado("SELECT * FROM EMPLEADOS WHERE Ced= " & txtCi.Text)
             OcultarTodo()

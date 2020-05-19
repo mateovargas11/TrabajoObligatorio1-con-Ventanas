@@ -18,4 +18,6 @@ values ("53393343","Mateo",null,"Vargas","Girino","Gerente","Robertosky 1234",11
 
 select sum(sueldoPagar) As Total_A_Pagar from empleados;
 
-select * from empleados
+select * from empleados;
+
+select count(*) FROM EMPLEADOS WHERE ced=53393343

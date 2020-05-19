@@ -3,7 +3,7 @@
 Public Class AddEmp
     Dim emp As New Empleado()
     Private Sub btnAddEmp_Click(sender As Object, e As EventArgs) Handles btnAddEmp.Click
-        Dim pagar, total As Double
+        Dim pagar As Double
         Try
             pagar = emp.calcMonto(cbCargo.Text, Double.Parse(txtSalario.Text)) + (Double.Parse(txtSalario.Text))
             If emp.AgrgarRegistro(Integer.Parse(txtCi.Text), txtPnom.Text,

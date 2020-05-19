@@ -34,6 +34,8 @@ Partial Class Eliminar
         '
         'gvEmpleados
         '
+        Me.gvEmpleados.BackgroundColor = System.Drawing.SystemColors.ActiveCaption
+        Me.gvEmpleados.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.gvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.gvEmpleados.Location = New System.Drawing.Point(12, 198)
         Me.gvEmpleados.Name = "gvEmpleados"
@@ -42,17 +44,20 @@ Partial Class Eliminar
         '
         'btnDelEmp
         '
+        Me.btnDelEmp.BackColor = System.Drawing.Color.Transparent
         Me.btnDelEmp.Font = New System.Drawing.Font("Cambria", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDelEmp.Location = New System.Drawing.Point(596, 64)
         Me.btnDelEmp.Name = "btnDelEmp"
         Me.btnDelEmp.Size = New System.Drawing.Size(318, 51)
         Me.btnDelEmp.TabIndex = 5
         Me.btnDelEmp.Text = "Eliminar empleado "
-        Me.btnDelEmp.UseVisualStyleBackColor = True
+        Me.btnDelEmp.UseVisualStyleBackColor = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label1.Location = New System.Drawing.Point(23, 86)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(156, 13)
@@ -68,13 +73,14 @@ Partial Class Eliminar
         '
         'btnVerEmp
         '
+        Me.btnVerEmp.BackColor = System.Drawing.Color.Transparent
         Me.btnVerEmp.Font = New System.Drawing.Font("Cambria", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnVerEmp.Location = New System.Drawing.Point(365, 74)
         Me.btnVerEmp.Name = "btnVerEmp"
         Me.btnVerEmp.Size = New System.Drawing.Size(118, 31)
         Me.btnVerEmp.TabIndex = 8
         Me.btnVerEmp.Text = "Ver Empleado"
-        Me.btnVerEmp.UseVisualStyleBackColor = True
+        Me.btnVerEmp.UseVisualStyleBackColor = False
         '
         'btnVolver
         '
@@ -100,6 +106,7 @@ Partial Class Eliminar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(971, 304)
         Me.ControlBox = False
         Me.Controls.Add(Me.btnSalir)
@@ -112,6 +119,7 @@ Partial Class Eliminar
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Eliminar"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Eliminar"
         CType(Me.gvEmpleados, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

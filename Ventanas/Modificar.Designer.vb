@@ -45,7 +45,7 @@ Partial Class Modificar
         Me.txtCi = New System.Windows.Forms.TextBox()
         Me.lblCi = New System.Windows.Forms.Label()
         Me.dgEmp = New System.Windows.Forms.DataGridView()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblSelec = New System.Windows.Forms.Label()
         CType(Me.dgEmp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -240,6 +240,8 @@ Partial Class Modificar
         '
         Me.dgEmp.AllowUserToAddRows = False
         Me.dgEmp.AllowUserToDeleteRows = False
+        Me.dgEmp.BackgroundColor = System.Drawing.SystemColors.ActiveCaption
+        Me.dgEmp.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgEmp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgEmp.Location = New System.Drawing.Point(5, 156)
         Me.dgEmp.Name = "dgEmp"
@@ -247,22 +249,25 @@ Partial Class Modificar
         Me.dgEmp.Size = New System.Drawing.Size(774, 69)
         Me.dgEmp.TabIndex = 33
         '
-        'Label1
+        'lblSelec
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(2, 140)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(279, 13)
-        Me.Label1.TabIndex = 34
-        Me.Label1.Text = "Seleccione al empleado para poder acceder a sus datos :"
+        Me.lblSelec.AutoSize = True
+        Me.lblSelec.Enabled = False
+        Me.lblSelec.Location = New System.Drawing.Point(2, 140)
+        Me.lblSelec.Name = "lblSelec"
+        Me.lblSelec.Size = New System.Drawing.Size(279, 13)
+        Me.lblSelec.TabIndex = 34
+        Me.lblSelec.Text = "Seleccione al empleado para poder acceder a sus datos :"
+        Me.lblSelec.Visible = False
         '
         'Modificar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(791, 462)
         Me.ControlBox = False
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblSelec)
         Me.Controls.Add(Me.dgEmp)
         Me.Controls.Add(Me.btnModif)
         Me.Controls.Add(Me.txtSalario)
@@ -320,5 +325,5 @@ Partial Class Modificar
     Friend WithEvents txtCi As TextBox
     Friend WithEvents lblCi As Label
     Friend WithEvents dgEmp As DataGridView
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblSelec As Label
 End Class

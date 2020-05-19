@@ -45,6 +45,8 @@ Partial Class Listados
         '
         'gvEmpleados
         '
+        Me.gvEmpleados.BackgroundColor = System.Drawing.SystemColors.ActiveCaption
+        Me.gvEmpleados.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.gvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.gvEmpleados.Location = New System.Drawing.Point(12, 191)
         Me.gvEmpleados.Name = "gvEmpleados"
@@ -114,6 +116,7 @@ Partial Class Listados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(972, 450)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label2)
