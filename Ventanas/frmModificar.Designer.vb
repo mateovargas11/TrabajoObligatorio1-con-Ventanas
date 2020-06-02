@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Modificar
+Partial Class frmModificar
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,8 +22,7 @@ Partial Class Modificar
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnSalir = New System.Windows.Forms.Button()
-        Me.btnVolver = New System.Windows.Forms.Button()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmModificar))
         Me.txtPnom = New System.Windows.Forms.TextBox()
         Me.txtSnom = New System.Windows.Forms.TextBox()
         Me.txtPape = New System.Windows.Forms.TextBox()
@@ -46,67 +45,48 @@ Partial Class Modificar
         Me.lblCi = New System.Windows.Forms.Label()
         Me.dgEmp = New System.Windows.Forms.DataGridView()
         Me.lblSelec = New System.Windows.Forms.Label()
+        Me.btnVolver = New System.Windows.Forms.Button()
         CType(Me.dgEmp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'btnSalir
-        '
-        Me.btnSalir.Font = New System.Drawing.Font("Cambria", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSalir.Location = New System.Drawing.Point(628, 28)
-        Me.btnSalir.Name = "btnSalir"
-        Me.btnSalir.Size = New System.Drawing.Size(135, 32)
-        Me.btnSalir.TabIndex = 15
-        Me.btnSalir.Text = "Salir"
-        Me.btnSalir.UseVisualStyleBackColor = True
-        '
-        'btnVolver
-        '
-        Me.btnVolver.Font = New System.Drawing.Font("Cambria", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnVolver.Location = New System.Drawing.Point(39, 28)
-        Me.btnVolver.Name = "btnVolver"
-        Me.btnVolver.Size = New System.Drawing.Size(135, 32)
-        Me.btnVolver.TabIndex = 14
-        Me.btnVolver.Text = "Volver"
-        Me.btnVolver.UseVisualStyleBackColor = True
-        '
         'txtPnom
         '
-        Me.txtPnom.Location = New System.Drawing.Point(172, 274)
+        Me.txtPnom.Location = New System.Drawing.Point(122, 275)
         Me.txtPnom.Name = "txtPnom"
         Me.txtPnom.Size = New System.Drawing.Size(147, 20)
         Me.txtPnom.TabIndex = 16
         '
         'txtSnom
         '
-        Me.txtSnom.Location = New System.Drawing.Point(172, 334)
+        Me.txtSnom.Location = New System.Drawing.Point(122, 335)
         Me.txtSnom.Name = "txtSnom"
         Me.txtSnom.Size = New System.Drawing.Size(147, 20)
         Me.txtSnom.TabIndex = 17
         '
         'txtPape
         '
-        Me.txtPape.Location = New System.Drawing.Point(352, 274)
+        Me.txtPape.Location = New System.Drawing.Point(302, 275)
         Me.txtPape.Name = "txtPape"
         Me.txtPape.Size = New System.Drawing.Size(147, 20)
         Me.txtPape.TabIndex = 18
         '
         'txtSape
         '
-        Me.txtSape.Location = New System.Drawing.Point(352, 334)
+        Me.txtSape.Location = New System.Drawing.Point(302, 335)
         Me.txtSape.Name = "txtSape"
         Me.txtSape.Size = New System.Drawing.Size(147, 20)
         Me.txtSape.TabIndex = 19
         '
         'txtTel
         '
-        Me.txtTel.Location = New System.Drawing.Point(534, 274)
+        Me.txtTel.Location = New System.Drawing.Point(484, 275)
         Me.txtTel.Name = "txtTel"
         Me.txtTel.Size = New System.Drawing.Size(147, 20)
         Me.txtTel.TabIndex = 20
         '
         'txtDir
         '
-        Me.txtDir.Location = New System.Drawing.Point(534, 334)
+        Me.txtDir.Location = New System.Drawing.Point(484, 335)
         Me.txtDir.Name = "txtDir"
         Me.txtDir.Size = New System.Drawing.Size(147, 20)
         Me.txtDir.TabIndex = 21
@@ -114,7 +94,7 @@ Partial Class Modificar
         'lblSalario
         '
         Me.lblSalario.AutoSize = True
-        Me.lblSalario.Location = New System.Drawing.Point(531, 383)
+        Me.lblSalario.Location = New System.Drawing.Point(481, 384)
         Me.lblSalario.Name = "lblSalario"
         Me.lblSalario.Size = New System.Drawing.Size(42, 13)
         Me.lblSalario.TabIndex = 30
@@ -123,7 +103,7 @@ Partial Class Modificar
         'lblTel
         '
         Me.lblTel.AutoSize = True
-        Me.lblTel.Location = New System.Drawing.Point(531, 258)
+        Me.lblTel.Location = New System.Drawing.Point(481, 259)
         Me.lblTel.Name = "lblTel"
         Me.lblTel.Size = New System.Drawing.Size(52, 13)
         Me.lblTel.TabIndex = 29
@@ -132,7 +112,7 @@ Partial Class Modificar
         'lblCargo
         '
         Me.lblCargo.AutoSize = True
-        Me.lblCargo.Location = New System.Drawing.Point(339, 383)
+        Me.lblCargo.Location = New System.Drawing.Point(289, 384)
         Me.lblCargo.Name = "lblCargo"
         Me.lblCargo.Size = New System.Drawing.Size(38, 13)
         Me.lblCargo.TabIndex = 28
@@ -141,7 +121,7 @@ Partial Class Modificar
         'lblDir
         '
         Me.lblDir.AutoSize = True
-        Me.lblDir.Location = New System.Drawing.Point(531, 318)
+        Me.lblDir.Location = New System.Drawing.Point(481, 319)
         Me.lblDir.Name = "lblDir"
         Me.lblDir.Size = New System.Drawing.Size(55, 13)
         Me.lblDir.TabIndex = 27
@@ -150,7 +130,7 @@ Partial Class Modificar
         'lblSape
         '
         Me.lblSape.AutoSize = True
-        Me.lblSape.Location = New System.Drawing.Point(349, 318)
+        Me.lblSape.Location = New System.Drawing.Point(299, 319)
         Me.lblSape.Name = "lblSape"
         Me.lblSape.Size = New System.Drawing.Size(68, 13)
         Me.lblSape.TabIndex = 26
@@ -159,7 +139,7 @@ Partial Class Modificar
         'lblPape
         '
         Me.lblPape.AutoSize = True
-        Me.lblPape.Location = New System.Drawing.Point(352, 258)
+        Me.lblPape.Location = New System.Drawing.Point(302, 259)
         Me.lblPape.Name = "lblPape"
         Me.lblPape.Size = New System.Drawing.Size(65, 13)
         Me.lblPape.TabIndex = 25
@@ -168,7 +148,7 @@ Partial Class Modificar
         'lblSnom
         '
         Me.lblSnom.AutoSize = True
-        Me.lblSnom.Location = New System.Drawing.Point(169, 318)
+        Me.lblSnom.Location = New System.Drawing.Point(119, 319)
         Me.lblSnom.Name = "lblSnom"
         Me.lblSnom.Size = New System.Drawing.Size(68, 13)
         Me.lblSnom.TabIndex = 24
@@ -177,7 +157,7 @@ Partial Class Modificar
         'lblPnom
         '
         Me.lblPnom.AutoSize = True
-        Me.lblPnom.Location = New System.Drawing.Point(169, 258)
+        Me.lblPnom.Location = New System.Drawing.Point(119, 259)
         Me.lblPnom.Name = "lblPnom"
         Me.lblPnom.Size = New System.Drawing.Size(65, 13)
         Me.lblPnom.TabIndex = 23
@@ -188,14 +168,14 @@ Partial Class Modificar
         Me.cbCargo.AutoCompleteCustomSource.AddRange(New String() {"Gerente", "Operario", "Administrativo"})
         Me.cbCargo.FormattingEnabled = True
         Me.cbCargo.Items.AddRange(New Object() {"Gerente", "Administrativo", "Operario"})
-        Me.cbCargo.Location = New System.Drawing.Point(342, 403)
+        Me.cbCargo.Location = New System.Drawing.Point(292, 404)
         Me.cbCargo.Name = "cbCargo"
         Me.cbCargo.Size = New System.Drawing.Size(169, 21)
         Me.cbCargo.TabIndex = 22
         '
         'txtSalario
         '
-        Me.txtSalario.Location = New System.Drawing.Point(534, 404)
+        Me.txtSalario.Location = New System.Drawing.Point(484, 405)
         Me.txtSalario.Name = "txtSalario"
         Me.txtSalario.Size = New System.Drawing.Size(147, 20)
         Me.txtSalario.TabIndex = 31
@@ -203,7 +183,7 @@ Partial Class Modificar
         'btnModif
         '
         Me.btnModif.Font = New System.Drawing.Font("Cambria", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnModif.Location = New System.Drawing.Point(57, 386)
+        Me.btnModif.Location = New System.Drawing.Point(7, 387)
         Me.btnModif.Name = "btnModif"
         Me.btnModif.Size = New System.Drawing.Size(262, 51)
         Me.btnModif.TabIndex = 32
@@ -260,13 +240,23 @@ Partial Class Modificar
         Me.lblSelec.Text = "Seleccione al empleado para poder acceder a sus datos :"
         Me.lblSelec.Visible = False
         '
-        'Modificar
+        'btnVolver
+        '
+        Me.btnVolver.Font = New System.Drawing.Font("Cambria", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVolver.Location = New System.Drawing.Point(39, 28)
+        Me.btnVolver.Name = "btnVolver"
+        Me.btnVolver.Size = New System.Drawing.Size(135, 32)
+        Me.btnVolver.TabIndex = 14
+        Me.btnVolver.Text = "Volver"
+        Me.btnVolver.UseVisualStyleBackColor = True
+        Me.btnVolver.Visible = False
+        '
+        'frmModificar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(791, 462)
-        Me.ControlBox = False
         Me.Controls.Add(Me.lblSelec)
         Me.Controls.Add(Me.dgEmp)
         Me.Controls.Add(Me.btnModif)
@@ -286,24 +276,22 @@ Partial Class Modificar
         Me.Controls.Add(Me.txtPape)
         Me.Controls.Add(Me.txtSnom)
         Me.Controls.Add(Me.txtPnom)
-        Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.btnVerEmp)
         Me.Controls.Add(Me.txtCi)
         Me.Controls.Add(Me.lblCi)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "Modificar"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Name = "frmModificar"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Modificar"
         CType(Me.dgEmp, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents btnSalir As Windows.Forms.Button
-    Friend WithEvents btnVolver As Windows.Forms.Button
     Friend WithEvents txtPnom As Windows.Forms.TextBox
     Friend WithEvents txtSnom As Windows.Forms.TextBox
     Friend WithEvents txtPape As Windows.Forms.TextBox
@@ -326,4 +314,5 @@ Partial Class Modificar
     Friend WithEvents lblCi As Label
     Friend WithEvents dgEmp As DataGridView
     Friend WithEvents lblSelec As Label
+    Friend WithEvents btnVolver As Button
 End Class

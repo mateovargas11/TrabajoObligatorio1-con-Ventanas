@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Eliminar
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class frmEliminar
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,15 +20,15 @@ Partial Class Eliminar
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmEliminar))
         Me.gvEmpleados = New System.Windows.Forms.DataGridView()
         Me.btnDelEmp = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtCi = New System.Windows.Forms.TextBox()
         Me.btnVerEmp = New System.Windows.Forms.Button()
         Me.btnVolver = New System.Windows.Forms.Button()
-        Me.btnSalir = New System.Windows.Forms.Button()
         CType(Me.gvEmpleados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -46,9 +46,9 @@ Partial Class Eliminar
         '
         Me.btnDelEmp.BackColor = System.Drawing.Color.Transparent
         Me.btnDelEmp.Font = New System.Drawing.Font("Cambria", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDelEmp.Location = New System.Drawing.Point(596, 64)
+        Me.btnDelEmp.Location = New System.Drawing.Point(519, 52)
         Me.btnDelEmp.Name = "btnDelEmp"
-        Me.btnDelEmp.Size = New System.Drawing.Size(318, 51)
+        Me.btnDelEmp.Size = New System.Drawing.Size(298, 51)
         Me.btnDelEmp.TabIndex = 5
         Me.btnDelEmp.Text = "Eliminar empleado "
         Me.btnDelEmp.UseVisualStyleBackColor = False
@@ -91,35 +91,26 @@ Partial Class Eliminar
         Me.btnVolver.TabIndex = 9
         Me.btnVolver.Text = "Volver"
         Me.btnVolver.UseVisualStyleBackColor = True
+        Me.btnVolver.Visible = False
         '
-        'btnSalir
-        '
-        Me.btnSalir.Font = New System.Drawing.Font("Cambria", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSalir.Location = New System.Drawing.Point(824, 12)
-        Me.btnSalir.Name = "btnSalir"
-        Me.btnSalir.Size = New System.Drawing.Size(135, 32)
-        Me.btnSalir.TabIndex = 10
-        Me.btnSalir.Text = "Salir"
-        Me.btnSalir.UseVisualStyleBackColor = True
-        '
-        'Eliminar
+        'frmEliminar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(971, 304)
-        Me.ControlBox = False
-        Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.btnVerEmp)
         Me.Controls.Add(Me.txtCi)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnDelEmp)
         Me.Controls.Add(Me.gvEmpleados)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "Eliminar"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Name = "frmEliminar"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Eliminar"
         CType(Me.gvEmpleados, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -133,5 +124,4 @@ Partial Class Eliminar
     Friend WithEvents txtCi As TextBox
     Friend WithEvents btnVerEmp As Button
     Friend WithEvents btnVolver As Button
-    Friend WithEvents btnSalir As Button
 End Class

@@ -1,6 +1,6 @@
 ﻿Imports BibliotecaClases
 
-Public Class Listados
+Public Class frmListados
     Dim emp As New Empleado()
 
     Private Sub btnListar_Click(sender As Object, e As EventArgs) Handles btnListar.Click
@@ -30,14 +30,14 @@ Public Class Listados
     End Sub
 
 
-    Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
-        AddEmp.Show()
-        Me.Close()
-    End Sub
+    'Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
+    '    frmAddEmp.Show()
+    '    Me.Close()
+    'End Sub
 
-    Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
+    Private Sub btnSalir_Click(sender As Object, e As EventArgs)
         Me.Close()
-        AddEmp.Close()
+        frmAddEmp.Close()
     End Sub
 
     Private Sub btnTotalPagar_Click(sender As Object, e As EventArgs) Handles btnTotalPagar.Click

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Listados
+Partial Class frmListados
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,12 +22,12 @@ Partial Class Listados
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmListados))
         Me.btnListar = New System.Windows.Forms.Button()
         Me.gvEmpleados = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cbTipoListado = New System.Windows.Forms.ComboBox()
         Me.btnVolver = New System.Windows.Forms.Button()
-        Me.btnSalir = New System.Windows.Forms.Button()
         Me.btnTotalPagar = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.gvEmpleados, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -81,16 +81,7 @@ Partial Class Listados
         Me.btnVolver.TabIndex = 6
         Me.btnVolver.Text = "Volver"
         Me.btnVolver.UseVisualStyleBackColor = True
-        '
-        'btnSalir
-        '
-        Me.btnSalir.Font = New System.Drawing.Font("Cambria", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSalir.Location = New System.Drawing.Point(819, 12)
-        Me.btnSalir.Name = "btnSalir"
-        Me.btnSalir.Size = New System.Drawing.Size(135, 32)
-        Me.btnSalir.TabIndex = 7
-        Me.btnSalir.Text = "Salir"
-        Me.btnSalir.UseVisualStyleBackColor = True
+        Me.btnVolver.Visible = False
         '
         'btnTotalPagar
         '
@@ -112,25 +103,25 @@ Partial Class Listados
         Me.Label2.TabIndex = 22
         Me.Label2.Text = "Para ver lo que la empresa debe abonar:"
         '
-        'Listados
+        'frmListados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(972, 450)
-        Me.ControlBox = False
+        Me.ClientSize = New System.Drawing.Size(839, 450)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnTotalPagar)
-        Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.cbTipoListado)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.gvEmpleados)
         Me.Controls.Add(Me.btnListar)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "Listados"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Name = "frmListados"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Listados"
         CType(Me.gvEmpleados, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -143,7 +134,6 @@ Partial Class Listados
     Friend WithEvents Label1 As Label
     Friend WithEvents cbTipoListado As ComboBox
     Friend WithEvents btnVolver As Button
-    Friend WithEvents btnSalir As Button
     Friend WithEvents btnTotalPagar As Button
     Friend WithEvents Label2 As Label
 End Class

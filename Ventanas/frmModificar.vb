@@ -1,19 +1,19 @@
 ﻿Imports System.Configuration
 Imports BibliotecaClases
 
-Public Class Modificar
+Public Class frmModificar
     Dim emp As New Empleado()
     Private Sub Modificar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         OcultarTodo()
     End Sub
 
-    Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
-        AddEmp.Show()
-        Me.Close()
-    End Sub
+    'Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
+    '    frmAddEmp.Show()
+    '    Me.Close()
+    'End Sub
 
-    Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
-        AddEmp.Close()
+    Private Sub btnSalir_Click(sender As Object, e As EventArgs) 
+        frmAddEmp.Close()
         Me.Close()
     End Sub
 

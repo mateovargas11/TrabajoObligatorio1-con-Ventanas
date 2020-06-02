@@ -94,29 +94,35 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddEmp.vb">
+    <Compile Include="frmAddEmp.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddEmp.Designer.vb">
-      <DependentUpon>AddEmp.vb</DependentUpon>
+    <Compile Include="frmAddEmp.Designer.vb">
+      <DependentUpon>frmAddEmp.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Eliminar.Designer.vb">
-      <DependentUpon>Eliminar.vb</DependentUpon>
+    <Compile Include="frmEliminar.Designer.vb">
+      <DependentUpon>frmEliminar.vb</DependentUpon>
     </Compile>
-    <Compile Include="Eliminar.vb">
+    <Compile Include="frmEliminar.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Listados.Designer.vb">
-      <DependentUpon>Listados.vb</DependentUpon>
+    <Compile Include="frmMDI.Designer.vb">
+      <DependentUpon>frmMDI.vb</DependentUpon>
     </Compile>
-    <Compile Include="Listados.vb">
+    <Compile Include="frmMDI.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modificar.Designer.vb">
-      <DependentUpon>Modificar.vb</DependentUpon>
+    <Compile Include="frmListados.Designer.vb">
+      <DependentUpon>frmListados.vb</DependentUpon>
     </Compile>
-    <Compile Include="Modificar.vb">
+    <Compile Include="frmListados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificar.Designer.vb">
+      <DependentUpon>frmModificar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificar.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -137,17 +143,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AddEmp.resx">
-      <DependentUpon>AddEmp.vb</DependentUpon>
+    <EmbeddedResource Include="frmAddEmp.resx">
+      <DependentUpon>frmAddEmp.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Eliminar.resx">
-      <DependentUpon>Eliminar.vb</DependentUpon>
+    <EmbeddedResource Include="frmEliminar.resx">
+      <DependentUpon>frmEliminar.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Listados.resx">
-      <DependentUpon>Listados.vb</DependentUpon>
+    <EmbeddedResource Include="frmMDI.resx">
+      <DependentUpon>frmMDI.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modificar.resx">
-      <DependentUpon>Modificar.vb</DependentUpon>
+    <EmbeddedResource Include="frmListados.resx">
+      <DependentUpon>frmListados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificar.resx">
+      <DependentUpon>frmModificar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -177,6 +186,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Logo.ico" />
+    <None Include="Resources\LogoPrincipal Segundo.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

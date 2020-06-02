@@ -1,6 +1,6 @@
 ﻿Imports BibliotecaClases
 
-Public Class AddEmp
+Public Class frmAddEmp
     Dim emp As New Empleado()
     Private Sub btnAddEmp_Click(sender As Object, e As EventArgs) Handles btnAddEmp.Click
         Dim pagar As Double
@@ -14,7 +14,7 @@ Public Class AddEmp
 
             End If
         Catch ex As Exception
-            MsgBox("Error: " & ex.Message)
+            MsgBox("Error: " & ex.Message, MsgBoxStyle.Information, "Advertencia")
         End Try
 
 
@@ -33,18 +33,18 @@ Public Class AddEmp
         cbCargo.SelectedIndex = -1
     End Sub
 
-    Private Sub btnListados_Click(sender As Object, e As EventArgs) Handles btnListados.Click
-        Listados.Show()
-        Me.Hide()
-    End Sub
+    'Private Sub btnListados_Click(sender As Object, e As EventArgs) Handles btnListados.Click
+    '    frmListados.Show()
+    '    Me.Hide()
+    'End Sub
 
-    Private Sub btnDelEmp_Click(sender As Object, e As EventArgs) Handles btnDelEmp.Click
-        Eliminar.Show()
-        Me.Hide()
-    End Sub
+    'Private Sub btnDelEmp_Click(sender As Object, e As EventArgs) Handles btnDelEmp.Click
+    '    frmEliminar.Show()
+    '    Me.Hide()
+    'End Sub
 
-    Private Sub btnModif_Click(sender As Object, e As EventArgs) Handles btnModif.Click
-        Modificar.Show()
-        Me.Hide()
-    End Sub
+    'Private Sub btnModif_Click(sender As Object, e As EventArgs) Handles btnModif.Click
+    '    frmModificar.Show()
+    '    Me.Hide()
+    'End Sub
 End Class

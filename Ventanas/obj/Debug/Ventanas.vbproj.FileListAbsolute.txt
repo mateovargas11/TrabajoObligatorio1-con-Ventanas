@@ -24,9 +24,6 @@ C:\Users\matva\source\repos\TrabajoObligatorio1-con-Ventanas\Ventanas\bin\Debug\
 C:\Users\matva\source\repos\TrabajoObligatorio1-con-Ventanas\Ventanas\bin\Debug\BibliotecaClases.pdb
 C:\Users\matva\source\repos\TrabajoObligatorio1-con-Ventanas\Ventanas\bin\Debug\BibliotecaClases.xml
 C:\Users\matva\source\repos\TrabajoObligatorio1-con-Ventanas\Ventanas\obj\Debug\Ventanas.vbprojAssemblyReference.cache
-C:\Users\matva\source\repos\TrabajoObligatorio1-con-Ventanas\Ventanas\obj\Debug\Ventanas.AddEmp.resources
-C:\Users\matva\source\repos\TrabajoObligatorio1-con-Ventanas\Ventanas\obj\Debug\Ventanas.Eliminar.resources
-C:\Users\matva\source\repos\TrabajoObligatorio1-con-Ventanas\Ventanas\obj\Debug\Ventanas.Listados.resources
 C:\Users\matva\source\repos\TrabajoObligatorio1-con-Ventanas\Ventanas\obj\Debug\Ventanas.Resources.resources
 C:\Users\matva\source\repos\TrabajoObligatorio1-con-Ventanas\Ventanas\obj\Debug\Ventanas.vbproj.GenerateResource.cache
 C:\Users\matva\source\repos\TrabajoObligatorio1-con-Ventanas\Ventanas\obj\Debug\Ventanas.vbproj.CoreCompileInputs.cache
@@ -34,4 +31,8 @@ C:\Users\matva\source\repos\TrabajoObligatorio1-con-Ventanas\Ventanas\obj\Debug\
 C:\Users\matva\source\repos\TrabajoObligatorio1-con-Ventanas\Ventanas\obj\Debug\Ventanas.exe
 C:\Users\matva\source\repos\TrabajoObligatorio1-con-Ventanas\Ventanas\obj\Debug\Ventanas.xml
 C:\Users\matva\source\repos\TrabajoObligatorio1-con-Ventanas\Ventanas\obj\Debug\Ventanas.pdb
-C:\Users\matva\source\repos\TrabajoObligatorio1-con-Ventanas\Ventanas\obj\Debug\Ventanas.Modificar.resources
+C:\Users\matva\source\repos\TrabajoObligatorio1-con-Ventanas\Ventanas\obj\Debug\Ventanas.frmMDI.resources
+C:\Users\matva\source\repos\TrabajoObligatorio1-con-Ventanas\Ventanas\obj\Debug\Ventanas.frmAddEmp.resources
+C:\Users\matva\source\repos\TrabajoObligatorio1-con-Ventanas\Ventanas\obj\Debug\Ventanas.frmEliminar.resources
+C:\Users\matva\source\repos\TrabajoObligatorio1-con-Ventanas\Ventanas\obj\Debug\Ventanas.frmListados.resources
+C:\Users\matva\source\repos\TrabajoObligatorio1-con-Ventanas\Ventanas\obj\Debug\Ventanas.frmModificar.resources

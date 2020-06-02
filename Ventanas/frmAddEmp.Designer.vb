@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class AddEmp
+Partial Class frmAddEmp
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,7 +22,7 @@ Partial Class AddEmp
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AddEmp))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAddEmp))
         Me.btnAddEmp = New System.Windows.Forms.Button()
         Me.btnListados = New System.Windows.Forms.Button()
         Me.cbCargo = New System.Windows.Forms.ComboBox()
@@ -49,8 +49,9 @@ Partial Class AddEmp
         '
         'btnAddEmp
         '
+        Me.btnAddEmp.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnAddEmp.Font = New System.Drawing.Font("Cambria", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAddEmp.Location = New System.Drawing.Point(330, 237)
+        Me.btnAddEmp.Location = New System.Drawing.Point(301, 237)
         Me.btnAddEmp.Name = "btnAddEmp"
         Me.btnAddEmp.Size = New System.Drawing.Size(276, 51)
         Me.btnAddEmp.TabIndex = 0
@@ -66,13 +67,14 @@ Partial Class AddEmp
         Me.btnListados.TabIndex = 1
         Me.btnListados.Text = "Listados"
         Me.btnListados.UseVisualStyleBackColor = True
+        Me.btnListados.Visible = False
         '
         'cbCargo
         '
         Me.cbCargo.AutoCompleteCustomSource.AddRange(New String() {"Gerente", "Operario", "Administrativo"})
         Me.cbCargo.FormattingEnabled = True
         Me.cbCargo.Items.AddRange(New Object() {"Gerente", "Administrativo", "Operario"})
-        Me.cbCargo.Location = New System.Drawing.Point(365, 186)
+        Me.cbCargo.Location = New System.Drawing.Point(336, 186)
         Me.cbCargo.Name = "cbCargo"
         Me.cbCargo.Size = New System.Drawing.Size(169, 21)
         Me.cbCargo.TabIndex = 2
@@ -82,7 +84,7 @@ Partial Class AddEmp
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label1.Location = New System.Drawing.Point(62, 57)
+        Me.Label1.Location = New System.Drawing.Point(33, 57)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(43, 13)
         Me.Label1.TabIndex = 3
@@ -93,7 +95,7 @@ Partial Class AddEmp
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label2.Location = New System.Drawing.Point(294, 57)
+        Me.Label2.Location = New System.Drawing.Point(265, 57)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(65, 13)
         Me.Label2.TabIndex = 4
@@ -104,7 +106,7 @@ Partial Class AddEmp
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label3.Location = New System.Drawing.Point(538, 54)
+        Me.Label3.Location = New System.Drawing.Point(509, 54)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(68, 13)
         Me.Label3.TabIndex = 5
@@ -115,7 +117,7 @@ Partial Class AddEmp
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label4.Location = New System.Drawing.Point(40, 122)
+        Me.Label4.Location = New System.Drawing.Point(11, 122)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(65, 13)
         Me.Label4.TabIndex = 6
@@ -126,7 +128,7 @@ Partial Class AddEmp
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label5.Location = New System.Drawing.Point(294, 122)
+        Me.Label5.Location = New System.Drawing.Point(265, 122)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(68, 13)
         Me.Label5.TabIndex = 7
@@ -137,7 +139,7 @@ Partial Class AddEmp
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label6.Location = New System.Drawing.Point(551, 122)
+        Me.Label6.Location = New System.Drawing.Point(522, 122)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(55, 13)
         Me.Label6.TabIndex = 8
@@ -148,7 +150,7 @@ Partial Class AddEmp
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label7.Location = New System.Drawing.Point(321, 189)
+        Me.Label7.Location = New System.Drawing.Point(292, 189)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(38, 13)
         Me.Label7.TabIndex = 9
@@ -159,7 +161,7 @@ Partial Class AddEmp
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label8.Location = New System.Drawing.Point(53, 186)
+        Me.Label8.Location = New System.Drawing.Point(24, 186)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(52, 13)
         Me.Label8.TabIndex = 10
@@ -167,56 +169,56 @@ Partial Class AddEmp
         '
         'txtCi
         '
-        Me.txtCi.Location = New System.Drawing.Point(111, 54)
+        Me.txtCi.Location = New System.Drawing.Point(82, 54)
         Me.txtCi.Name = "txtCi"
         Me.txtCi.Size = New System.Drawing.Size(151, 20)
         Me.txtCi.TabIndex = 11
         '
         'txtPape
         '
-        Me.txtPape.Location = New System.Drawing.Point(111, 119)
+        Me.txtPape.Location = New System.Drawing.Point(82, 119)
         Me.txtPape.Name = "txtPape"
         Me.txtPape.Size = New System.Drawing.Size(151, 20)
         Me.txtPape.TabIndex = 12
         '
         'txtTel
         '
-        Me.txtTel.Location = New System.Drawing.Point(111, 182)
+        Me.txtTel.Location = New System.Drawing.Point(82, 182)
         Me.txtTel.Name = "txtTel"
         Me.txtTel.Size = New System.Drawing.Size(151, 20)
         Me.txtTel.TabIndex = 13
         '
         'txtPnom
         '
-        Me.txtPnom.Location = New System.Drawing.Point(365, 50)
+        Me.txtPnom.Location = New System.Drawing.Point(336, 50)
         Me.txtPnom.Name = "txtPnom"
         Me.txtPnom.Size = New System.Drawing.Size(151, 20)
         Me.txtPnom.TabIndex = 14
         '
         'txtSape
         '
-        Me.txtSape.Location = New System.Drawing.Point(365, 115)
+        Me.txtSape.Location = New System.Drawing.Point(336, 115)
         Me.txtSape.Name = "txtSape"
         Me.txtSape.Size = New System.Drawing.Size(151, 20)
         Me.txtSape.TabIndex = 15
         '
         'txtSnom
         '
-        Me.txtSnom.Location = New System.Drawing.Point(625, 51)
+        Me.txtSnom.Location = New System.Drawing.Point(596, 51)
         Me.txtSnom.Name = "txtSnom"
         Me.txtSnom.Size = New System.Drawing.Size(151, 20)
         Me.txtSnom.TabIndex = 16
         '
         'txtDir
         '
-        Me.txtDir.Location = New System.Drawing.Point(625, 119)
+        Me.txtDir.Location = New System.Drawing.Point(596, 119)
         Me.txtDir.Name = "txtDir"
         Me.txtDir.Size = New System.Drawing.Size(256, 20)
         Me.txtDir.TabIndex = 17
         '
         'txtSalario
         '
-        Me.txtSalario.Location = New System.Drawing.Point(625, 187)
+        Me.txtSalario.Location = New System.Drawing.Point(596, 187)
         Me.txtSalario.Name = "txtSalario"
         Me.txtSalario.Size = New System.Drawing.Size(78, 20)
         Me.txtSalario.TabIndex = 19
@@ -226,7 +228,7 @@ Partial Class AddEmp
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label9.Location = New System.Drawing.Point(564, 190)
+        Me.Label9.Location = New System.Drawing.Point(535, 190)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(42, 13)
         Me.Label9.TabIndex = 18
@@ -241,6 +243,7 @@ Partial Class AddEmp
         Me.btnDelEmp.TabIndex = 20
         Me.btnDelEmp.Text = "Eliminar Empleado"
         Me.btnDelEmp.UseVisualStyleBackColor = True
+        Me.btnDelEmp.Visible = False
         '
         'btnModif
         '
@@ -251,11 +254,13 @@ Partial Class AddEmp
         Me.btnModif.TabIndex = 21
         Me.btnModif.Text = "Modificar Empleado"
         Me.btnModif.UseVisualStyleBackColor = True
+        Me.btnModif.Visible = False
         '
-        'AddEmp
+        'frmAddEmp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(902, 367)
         Me.Controls.Add(Me.btnModif)
@@ -280,9 +285,12 @@ Partial Class AddEmp
         Me.Controls.Add(Me.cbCargo)
         Me.Controls.Add(Me.btnListados)
         Me.Controls.Add(Me.btnAddEmp)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "AddEmp"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
+        Me.Name = "frmAddEmp"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Empelados"
         Me.ResumeLayout(False)
         Me.PerformLayout()

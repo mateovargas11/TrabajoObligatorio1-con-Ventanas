@@ -1,6 +1,6 @@
 ﻿Imports BibliotecaClases
 
-Public Class Eliminar
+Public Class frmEliminar
 
     Dim emp As New Empleado()
 
@@ -14,14 +14,14 @@ Public Class Eliminar
         End If
     End Sub
 
-    Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
-        AddEmp.Show()
-        Me.Close()
-    End Sub
+    'Private Sub btnVolver_Click(sender As Object, e As EventArgs) Handles btnVolver.Click
+    '    frmAddEmp.Show()
+    '    Me.Close()
+    'End Sub
 
-    Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
+    Private Sub btnSalir_Click(sender As Object, e As EventArgs)
         Me.Close()
-        AddEmp.Close()
+        frmAddEmp.Close()
     End Sub
 
     Private Sub btnDelEmp_Click(sender As Object, e As EventArgs) Handles btnDelEmp.Click
