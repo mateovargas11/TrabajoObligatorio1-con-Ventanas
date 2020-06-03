@@ -2,6 +2,7 @@
 
     Private Sub listado(x As Integer, y As Integer, w As Integer, h As Integer)
         cerrarTodo()
+
         Dim frm As frmListados = New frmListados()
         frm.MdiParent = Me
         frm.Show()
@@ -10,6 +11,7 @@
 
     Private Sub modificar(x As Integer, y As Integer, w As Integer, h As Integer)
         cerrarTodo()
+
         Dim frm As frmModificar = New frmModificar()
         frm.MdiParent = Me
         frm.Show()
@@ -18,6 +20,7 @@
 
     Private Sub eliminar(x As Integer, y As Integer, w As Integer, h As Integer)
         cerrarTodo()
+
         Dim frm As frmEliminar = New frmEliminar()
         frm.MdiParent = Me
         frm.Show()
@@ -26,6 +29,7 @@
 
     Private Sub agregar(x As Integer, y As Integer, w As Integer, h As Integer)
         cerrarTodo()
+
         Dim frm As frmAddEmp = New frmAddEmp()
         frm.MdiParent = Me
         frm.Show()
@@ -93,4 +97,9 @@
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         cerrarTodo()
     End Sub
+
+    Private Sub AcercaDeNosotrosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AcercaDeNosotrosToolStripMenuItem.Click
+        Process.Start("https://gofile.io/d/WXeMU2")
+    End Sub
+
 End Class

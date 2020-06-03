@@ -29,6 +29,8 @@ Partial Class frmMDI
         Me.ModificarEmpleadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EliminarEmpleadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListarEmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AcercaDeNosotrosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.TSBagregar = New System.Windows.Forms.ToolStripButton()
         Me.TSBmodificar = New System.Windows.Forms.ToolStripButton()
@@ -49,7 +51,7 @@ Partial Class frmMDI
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestionarToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GestionarToolStripMenuItem, Me.AyudaToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1116, 24)
@@ -59,37 +61,57 @@ Partial Class frmMDI
         'GestionarToolStripMenuItem
         '
         Me.GestionarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarEmpleadoToolStripMenuItem, Me.ModificarEmpleadoToolStripMenuItem, Me.EliminarEmpleadoToolStripMenuItem, Me.ListarEmpleadosToolStripMenuItem})
+        Me.GestionarToolStripMenuItem.Image = CType(resources.GetObject("GestionarToolStripMenuItem.Image"), System.Drawing.Image)
         Me.GestionarToolStripMenuItem.Name = "GestionarToolStripMenuItem"
-        Me.GestionarToolStripMenuItem.Size = New System.Drawing.Size(69, 20)
+        Me.GestionarToolStripMenuItem.Size = New System.Drawing.Size(85, 20)
         Me.GestionarToolStripMenuItem.Text = "Gestionar"
         '
         'AgregarEmpleadoToolStripMenuItem
         '
+        Me.AgregarEmpleadoToolStripMenuItem.Image = CType(resources.GetObject("AgregarEmpleadoToolStripMenuItem.Image"), System.Drawing.Image)
         Me.AgregarEmpleadoToolStripMenuItem.Name = "AgregarEmpleadoToolStripMenuItem"
         Me.AgregarEmpleadoToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
         Me.AgregarEmpleadoToolStripMenuItem.Text = "Agregar Empleado"
         '
         'ModificarEmpleadoToolStripMenuItem
         '
+        Me.ModificarEmpleadoToolStripMenuItem.Image = CType(resources.GetObject("ModificarEmpleadoToolStripMenuItem.Image"), System.Drawing.Image)
         Me.ModificarEmpleadoToolStripMenuItem.Name = "ModificarEmpleadoToolStripMenuItem"
         Me.ModificarEmpleadoToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
         Me.ModificarEmpleadoToolStripMenuItem.Text = "Modificar Empleado"
         '
         'EliminarEmpleadoToolStripMenuItem
         '
+        Me.EliminarEmpleadoToolStripMenuItem.Image = CType(resources.GetObject("EliminarEmpleadoToolStripMenuItem.Image"), System.Drawing.Image)
         Me.EliminarEmpleadoToolStripMenuItem.Name = "EliminarEmpleadoToolStripMenuItem"
         Me.EliminarEmpleadoToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
         Me.EliminarEmpleadoToolStripMenuItem.Text = "Eliminar Empleado"
         '
         'ListarEmpleadosToolStripMenuItem
         '
+        Me.ListarEmpleadosToolStripMenuItem.Image = CType(resources.GetObject("ListarEmpleadosToolStripMenuItem.Image"), System.Drawing.Image)
         Me.ListarEmpleadosToolStripMenuItem.Name = "ListarEmpleadosToolStripMenuItem"
         Me.ListarEmpleadosToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
         Me.ListarEmpleadosToolStripMenuItem.Text = "Listar Empleados"
         '
+        'AyudaToolStripMenuItem
+        '
+        Me.AyudaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AcercaDeNosotrosToolStripMenuItem})
+        Me.AyudaToolStripMenuItem.Image = CType(resources.GetObject("AyudaToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
+        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(69, 20)
+        Me.AyudaToolStripMenuItem.Text = "Ayuda"
+        '
+        'AcercaDeNosotrosToolStripMenuItem
+        '
+        Me.AcercaDeNosotrosToolStripMenuItem.Image = CType(resources.GetObject("AcercaDeNosotrosToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.AcercaDeNosotrosToolStripMenuItem.Name = "AcercaDeNosotrosToolStripMenuItem"
+        Me.AcercaDeNosotrosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AcercaDeNosotrosToolStripMenuItem.Text = "Acerca de nosotros"
+        '
         'ToolStrip1
         '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSBagregar, Me.TSBmodificar, Me.TSBlistar, Me.TSBeliminar})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSBagregar, Me.TSBmodificar, Me.TSBeliminar, Me.TSBlistar})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 24)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(1116, 25)
@@ -158,7 +180,7 @@ Partial Class frmMDI
         Me.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnSalir.Location = New System.Drawing.Point(3, 449)
         Me.btnSalir.Name = "btnSalir"
-        Me.btnSalir.Size = New System.Drawing.Size(57, 53)
+        Me.btnSalir.Size = New System.Drawing.Size(53, 53)
         Me.btnSalir.TabIndex = 5
         Me.btnSalir.UseVisualStyleBackColor = True
         '
@@ -172,7 +194,7 @@ Partial Class frmMDI
         Me.btnElim.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnElim.Image = CType(resources.GetObject("btnElim.Image"), System.Drawing.Image)
         Me.btnElim.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnElim.Location = New System.Drawing.Point(12, 348)
+        Me.btnElim.Location = New System.Drawing.Point(12, 284)
         Me.btnElim.Name = "btnElim"
         Me.btnElim.Size = New System.Drawing.Size(215, 40)
         Me.btnElim.TabIndex = 4
@@ -189,7 +211,7 @@ Partial Class frmMDI
         Me.btnListar.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnListar.Image = CType(resources.GetObject("btnListar.Image"), System.Drawing.Image)
         Me.btnListar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnListar.Location = New System.Drawing.Point(12, 280)
+        Me.btnListar.Location = New System.Drawing.Point(12, 355)
         Me.btnListar.Name = "btnListar"
         Me.btnListar.Size = New System.Drawing.Size(215, 40)
         Me.btnListar.TabIndex = 3
@@ -245,10 +267,13 @@ Partial Class frmMDI
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1116, 560)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.IsMdiContainer = True
@@ -286,4 +311,6 @@ Partial Class frmMDI
     Friend WithEvents btnListar As Button
     Friend WithEvents btnModif As Button
     Friend WithEvents btnSalir As Button
+    Friend WithEvents AyudaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AcercaDeNosotrosToolStripMenuItem As ToolStripMenuItem
 End Class

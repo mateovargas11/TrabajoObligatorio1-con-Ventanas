@@ -50,7 +50,7 @@ Partial Class frmListados
         Me.gvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.gvEmpleados.Location = New System.Drawing.Point(12, 191)
         Me.gvEmpleados.Name = "gvEmpleados"
-        Me.gvEmpleados.Size = New System.Drawing.Size(948, 247)
+        Me.gvEmpleados.Size = New System.Drawing.Size(815, 247)
         Me.gvEmpleados.TabIndex = 3
         '
         'Label1
